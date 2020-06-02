@@ -31,7 +31,7 @@ pipeline {
 
    stage('Configuration') {
    steps {
-     sh 'npm i --verbose'
+     sh 'npm ci'
      sh 'npm run clean' 
     sh 'npm run lint' 
    }
